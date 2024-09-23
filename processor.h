@@ -74,12 +74,12 @@ struct VskAst
     VskAstPtr& at(size_t index)
     {
         assert(index < size());
-        return data()[index];
+        return data().at(index);
     }
     const VskAstPtr& at(size_t index) const
     {
         assert(index < size());
-        return data()[index];
+        return data().at(index);
     }
 
           std::vector<VskAstPtr>& data()       { return m_children; }
